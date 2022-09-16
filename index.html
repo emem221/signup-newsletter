@@ -4,7 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Newsletter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Newsletter Signup</title>
   </head>
-  <body></body>
+  <body class="text-center">
+    <main class="form-signin w-100 m-auto">
+      <form action="/" method="POST">
+        <img
+          class="mb-4"
+          src="public/image/Logo.png"
+          alt=""
+          width="60"
+          height="60"
+        />
+        <h1 class="h3 mb-3 fw-normal">Signup to my Newsletter</h1>
+
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            name="fName"
+            id="floatingInput"
+            placeholder="First Name"
+          />
+          <label for="floatingInput">First Name</label>
+        </div>
+
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingPassword"
+            name="lName"
+            placeholder="Last Name"
+          />
+          <label for="floatingPassword">Last Name</label>
+        </div>
+
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingPassword"
+            name="email"
+            placeholder="email"
+          />
+          <label for="floatingPassword">Email</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Sign Me Up!
+        </button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+      </form>
+    </main>
+  </body>
 </html>
